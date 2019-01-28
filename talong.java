@@ -10,12 +10,13 @@ public class talong{
 	JFrame frame = new JFrame("Diablo");
 
 	//background image
-	JLabel background = new JLabel(new ImageIcon("C:\\users\\student\\desktop\\Diablo_Bone.0.jpg"));
+	JLabel background = new JLabel(new ImageIcon("C:\\Users\\Student\\Desktop\\fabian-master\\Diablo_Bone.0.jpg"));
 	background.setSize(1000,800);
 
-	BufferedImage image = ImageIO.read(new File("Logo.jpg"));
-    JLabel label = new JLabel(new ImageIcon(image));
-    panel.add(label);
+
+	JLabel title = new JLabel(new ImageIcon("C:\\Users\\Student\\Desktop\\fabian-master\\hey.gif"));
+	title.setBounds(280,50,400,170);
+
 
 	JPanel panel1 = new JPanel();
 
@@ -54,6 +55,7 @@ public class talong{
 	frame.add(label);
 	frame.add(label2);
 	frame.add(label1);
+	frame.add(title);
 	frame.add(button);
 	frame.add(username);
 	frame.add(extra);
